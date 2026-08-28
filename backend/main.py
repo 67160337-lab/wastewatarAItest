@@ -23,7 +23,10 @@ app.add_middleware(
 )
 
 # โหลด AI Model ( Random Forest Regressor )
-MODEL_PATH = "water_treatment_ai_v1.pkl"
+MODEL_PATH = os.path.join(
+    os.path.dirname(os.path.dirname(__file__)),
+    "water_treatment_ai_v1.pkl"
+)
 try:
     ai_model = joblib.load(MODEL_PATH)
     print("AI Model loaded successfully.")
