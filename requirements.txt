@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic[email]
+passlib[bcrypt]
+python-multipart
+joblib
+pandas
+scikit-learn

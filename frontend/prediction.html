@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Prediction</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div class="layout"><aside class="sidebar">
+<div class="brand"><span>WA</span> Wastewater AI</div>
+<nav><a href="dashboard.html">Dashboard</a><a href="water.html">Water Quality</a><a class="active" href="prediction.html">AI Prediction</a><a href="history.html">History</a></nav>
+<button class="logout" onclick="logout()">Logout</button>
+</aside>
+<main class="main"><header><div><p class="muted">Machine Learning</p><h2>AI Aerator Prediction</h2></div></header>
+<section class="panel">
+<form id="predictionForm" class="grid-form">
+<label>Influent COD<input id="cod" type="number" step="0.01" required></label>
+<label>Flow Rate<input id="flow" type="number" step="0.01" required></label>
+<label>Water Temperature<input id="temp" type="number" step="0.01" required></label>
+<label>Current DO<input id="do" type="number" step="0.01" required></label>
+<button type="submit">Predict Aerator Speed</button>
+</form>
+<div id="result" class="result hidden"><span>Recommended Speed</span><strong id="speed">0%</strong></div>
+<p id="message" class="message"></p>
+</section></main></div>
+<script src="js/api.js"></script><script src="js/prediction.js"></script>
+</body></html>

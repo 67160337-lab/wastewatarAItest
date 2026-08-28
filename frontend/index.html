@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wastewater AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+<div class="login-card">
+  <div class="logo">WA</div>
+  <h1>Wastewater AI</h1>
+  <p class="muted">Smart Aerator Control System</p>
+
+  <form id="loginForm">
+    <label>Username</label>
+    <input id="username" required>
+
+    <label>Password</label>
+    <input id="password" type="password" required>
+
+    <button type="submit">Login</button>
+    <p id="message" class="message"></p>
+  </form>
+
+  <p class="switch">Don't have an account?
+    <a href="register.html">Register</a>
+  </p>
+</div>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

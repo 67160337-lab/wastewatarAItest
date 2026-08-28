@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Wastewater AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <div class="brand"><span>WA</span> Wastewater AI</div>
+  <nav>
+    <a class="active" href="dashboard.html">Dashboard</a>
+    <a href="water.html">Water Quality</a>
+    <a href="prediction.html">AI Prediction</a>
+    <a href="history.html">History</a>
+  </nav>
+  <button class="logout" onclick="logout()">Logout</button>
+</aside>
+
+<main class="main">
+  <header>
+    <div>
+      <p class="muted">Welcome back</p>
+      <h2 id="username">User</h2>
+    </div>
+    <div class="status-dot">● System Online</div>
+  </header>
+
+  <section class="cards">
+    <div class="stat"><span>Current DO</span><strong id="doValue">--</strong><small>mg/L</small></div>
+    <div class="stat"><span>Temperature</span><strong id="tempValue">--</strong><small>°C</small></div>
+    <div class="stat"><span>COD</span><strong id="codValue">--</strong><small>mg/L</small></div>
+    <div class="stat"><span>Aerator Speed</span><strong id="speedValue">--</strong><small>%</small></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-title">
+      <h3>AI Aerator Prediction</h3>
+      <a class="button-small" href="prediction.html">New Prediction</a>
+    </div>
+    <div class="prediction-box">
+      <div class="gauge"><span id="gaugeValue">--%</span></div>
+      <div>
+        <h3>Recommended Aerator Speed</h3>
+        <p class="muted">AI แนะนำให้ปรับ Speed เท่านี้</p>
+      </div>
+    </div>
+  </section>
+</main>
+</div>
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

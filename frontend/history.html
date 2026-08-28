@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>History</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div class="layout"><aside class="sidebar">
+<div class="brand"><span>WA</span> Wastewater AI</div>
+<nav><a href="dashboard.html">Dashboard</a><a href="water.html">Water Quality</a><a href="prediction.html">AI Prediction</a><a class="active" href="history.html">History</a></nav>
+<button class="logout" onclick="logout()">Logout</button>
+</aside>
+<main class="main"><header><div><p class="muted">Records</p><h2>Prediction History</h2></div></header>
+<section class="panel"><div class="table-wrap"><table><thead><tr><th>Date</th><th>COD</th><th>Flow</th><th>Temp</th><th>DO</th><th>Speed</th></tr></thead><tbody id="history"></tbody></table></div></section>
+</main></div>
+<script src="js/api.js"></script><script src="js/history.js"></script>
+</body></html>
