@@ -1,4 +1,4 @@
-const API = "https://wastewatar.onrender.com/";
+const API = "https://wastewatar.onrender.com";
 
 function token() {
     return localStorage.getItem("token") || "";
