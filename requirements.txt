@@ -8,3 +8,4 @@ python-multipart
 joblib
 pandas
 scikit-learn
+argon2-cffi
