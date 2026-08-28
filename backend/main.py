@@ -4,10 +4,10 @@ import pandas as pd
 from fastapi import FastAPI, Depends, HTTPException, Header
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
-from .database import Base, engine, get_db
-from .models import User, WaterQuality, AIPrediction
-from .schemas import RegisterRequest, LoginRequest, WaterRequest, PredictionRequest
-from .auth import hash_password, verify_password
+from database import Base, engine, get_db
+from models import User, WaterQuality, AIPrediction
+from schemas import RegisterRequest, LoginRequest, WaterRequest, PredictionRequest
+from auth import hash_password, verify_password
 
 os.makedirs("data", exist_ok=True)
 Base.metadata.create_all(bind=engine)
